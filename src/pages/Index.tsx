@@ -58,7 +58,7 @@ const Index = () => {
                       strokeLinecap="round" 
                       strokeLinejoin="round" 
                       strokeWidth={2} 
-                      d="M4 7l4.5-4.5L13 7M4 12l4.5-4.5L13 12M4 17l4.5-4.5L13 17M17 7l-3 3M14 17l3-3"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
                     />
                   </svg>
                 </div>
