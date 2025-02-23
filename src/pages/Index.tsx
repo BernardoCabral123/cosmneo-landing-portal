@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -46,21 +45,36 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-8">
-              <a href="#" className="text-xl font-bold text-gray-900">
-                Cosmneo
+            <div className="flex items-center">
+              <a href="#" className="flex items-center space-x-2 text-xl font-bold text-gray-900">
+                <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                  <svg 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    className="w-5 h-5 text-white"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M4 7l4.5-4.5L13 7M4 12l4.5-4.5L13 12M4 17l4.5-4.5L13 17M17 7l-3 3M14 17l3-3"
+                    />
+                  </svg>
+                </div>
+                <span>Cosmneo</span>
               </a>
-              <div className="hidden md:flex space-x-6">
-                <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Services
-                </a>
-                <a href="#products" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Products
-                </a>
-                <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Contact
-                </a>
-              </div>
+            </div>
+            <div className="hidden md:flex items-center space-x-6">
+              <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">
+                Services
+              </a>
+              <a href="#products" className="text-gray-600 hover:text-gray-900 transition-colors">
+                Products
+              </a>
+              <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+                Contact
+              </a>
             </div>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -251,7 +265,7 @@ const Index = () => {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                          d="M3 5a2 2 0 11-6 0 3 3 0 016 0z"
                         />
                       </svg>
                     </div>
